@@ -1,0 +1,24 @@
+body {
+    font-family: "Noto sans";
+    text-align: center;
+
+}
+
+h2 {
+    font-family: "poppins";
+
+}
+
+.colors {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.primary {
+    background-color: #7d82b8;
+    padding: 20px;
+}
+
+.secondary {
+    background-color: #b7e3cc;
+}
