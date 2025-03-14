@@ -22,7 +22,8 @@ header {
 img {
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
-#hamb::before{
+
+#hamb::before {
     content: "☰";
 }
 
@@ -36,11 +37,13 @@ img {
     cursor: pointer;
     background-color: none;
 }
-.display a{
+
+.display a {
     display: block;
 }
+
 nav {
-    
+
     margin: 0 auto;
     background-color: rgb(235, 235, 181);
 }
@@ -60,11 +63,12 @@ nav a {
 nav a:hover {
     background-color: white;
 }
-#hamb.display::before{
-    content:"x";
+
+#hamb.display::before {
+    content: "x";
     font-size: 1.3em;
     font-family: "roboto";
-    
+
 }
 
 h1 {
@@ -93,13 +97,35 @@ h2 {
     border-bottom: solid rgb(82, 62, 3);
 }
 
-ul,
-h3 {
-    text-align: center;
-    padding: 10px;
+.weeks {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-around;
+    padding: 8px;
     list-style: none;
+}
+
+.weeks p {
+    font-family: "poltawski nowy", serif;
+    font-style: oblique;
+    font-size: 1em;
 
 }
+
+.weeks a {
+    font-size: 0.9em;
+    font-family: "roboto", serif;
+}
+
+.weeks a:hover {
+    background-color: rgb(235, 235, 181);
+    color: black;
+    padding: 0.1rem;
+
+}
+
+
 
 footer {
     display: block;
@@ -109,7 +135,7 @@ footer {
     background-color: rgba(128, 128, 128, 0.516);
     font-size: 1.5em;
     font-weight: 500;
-    
+
 
 
 }

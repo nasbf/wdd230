@@ -14,6 +14,7 @@
         justify-content: space-evenly;
         font-size: 1.3em;
         font-family: "roboto", serif;
+        list-style: none;
     
     }
     #hamb{
@@ -39,7 +40,16 @@
         font-style: italic;
         font-size: 2.5em;
         color: black;
-    } */
+    } 
+    .weeks{
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+        list-style: none;
+    }
 
 
 }
