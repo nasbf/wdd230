@@ -93,13 +93,15 @@ header {
     background-color: #142E47;
     align-items: center;
     height: auto;
-
+    padding: 30px;
 
 }
+
 
 .hero img {
     display: flex;
     flex-direction: column;
+    ;
     width: 100%;
     height: 100%;
     box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.3);
