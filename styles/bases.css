@@ -97,32 +97,24 @@ h2 {
     border-bottom: solid rgb(82, 62, 3);
 }
 
-.weeks {
+.weeks{
+    display: block;
+    
+    margin:0 auto;
+    
+    
+}
+.weeks ul, li{
     display: flex;
-    flex-direction: row;
-    width: 95%;
-    justify-content: space-around;
-    padding: 8px;
-    list-style: none;
-}
-
-.weeks p {
-    font-family: "poltawski nowy", serif;
-    font-style: oblique;
+    font-family: "roboto";
     font-size: 1em;
+    
 
 }
-
-.weeks a {
-    font-size: 0.9em;
-    font-family: "roboto", serif;
-}
-
-.weeks a:hover {
-    background-color: rgb(235, 235, 181);
-    color: black;
-    padding: 0.1rem;
-
+li{
+    margin-left: 15px;
+    padding: 8px;
+    
 }
 
 
