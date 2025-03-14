@@ -7,10 +7,12 @@ info.textContent = `© ${currentYear} Alexandra Suárez Bogotá - Colombia`;
 const modifiedDate = document.lastModified;
 modified.textContent = `Last modification: ${modifiedDate}`;
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const hamburguer = document.querySelector('#boton');
+const navlist = document.querySelector('.navlist');
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+hamburguer.addEventListener('click', () => {
+	navlist.classList.toggle("show");
+	hamburguer.classList.toggle("show");
+})
+
+

@@ -1,11 +1,27 @@
 @media screen and (min-width: 800px) {
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 1.4em;
-        font-family: "roboto", serif;
-        ;
+    
+    .menu{
+        flex-direction: row;
     }
+    .menu a{
+        display: block;
+    }
+    
+    nav ul{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1.3em;
+        font-family: "roboto", serif;
+    
+    }
+    #hamb{
+        display: none;
+    }
+
+    
+
 
     main {
         display: grid;
@@ -23,7 +39,7 @@
         font-style: italic;
         font-size: 2.5em;
         color: black;
-    }
+    } */
 
 
 }

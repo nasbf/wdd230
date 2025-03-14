@@ -1,17 +1,16 @@
 @media screen and (min-width: 800px) {
-    #menu {
-		display: none; /* hide hamburger button */
-	}
-    nav{
-        max-width: 100%;
-    }
-	.navigation {
+	.navlist {
+		display: flex;
 		flex-direction: row;
-
+		justify-content: space-evenly;
+		font-size: 1.4em;
+		background-color:#142e4721 ;
+		
+	}
+	#boton {
+		display: none;
 	}
 
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
+
+
 }

@@ -22,26 +22,49 @@ header {
 img {
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
+#hamb::before{
+    content: "☰";
+}
 
+#hamb {
+    display: block;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    left: 280px;
+    border: none;
+    cursor: pointer;
+    background-color: none;
+}
+.display a{
+    display: block;
+}
 nav {
+    
     margin: 0 auto;
     background-color: rgb(235, 235, 181);
 }
 
 
 nav a {
-    display: block;
+    display: none;
     text-align: center;
     padding: 0.2rem;
     text-decoration: none;
     font-family: "roboto";
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: black;
 
 }
 
 nav a:hover {
     background-color: white;
+}
+#hamb.display::before{
+    content:"x";
+    font-size: 1.3em;
+    font-family: "roboto";
+    
 }
 
 h1 {
