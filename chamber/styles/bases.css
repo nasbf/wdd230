@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --principal-font-family: "nono sans", sans-serif;
+    --second-font: "poppins", serif;
+    --principal-color: #142E47;
+    --second-color: aliceblue;
+    --soft-background-color: #142E470d;
+    --hard-background-color: #020507;
+
+
+}
+
+header {
+    display: flex;
+    background-color: var(--soft-background-color);
+    color: var(--p-color);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--principal-font-family);
+    padding: 15px;
+    align-items: center;
+    gap: 10px;
+}
+
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+#menu {
+    border: none;
+    font-size: 1.8rem;
+    color: var(--hard-background-color);
+    position: absolute;
+    right: 10px;
+    top: 58px;
+    cursor: pointer;
+
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 1.5rem;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: var(--soft-background-color);
+    
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--hard-background-color);
+    font-family: var(--principal-font-family);
+}
+.navigation a:hover {
+	background-color: var(--principal-color);
+	color: var(--second-color);
+	font-family: var(--principal-font-family);
+}
+.open a {
+    display: block;
+}
+
+
+.hero {
+    display: block;
+    background-color: #142E47;
+    align-items: center;
+    height: auto;
+
+
+}
+
+.hero img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+    box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.3);
+}
+
+.hero p {
+    color: var(--second-color);
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.hero button {
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+    color: var(--hard-background-color);
+    font-family: var(--principal-font-family);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--soft-background-color);
+    font-family: var(--second-font);
+    padding: 30px;
+}
