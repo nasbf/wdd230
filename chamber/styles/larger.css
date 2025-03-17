@@ -1,15 +1,50 @@
 @media screen and (min-width: 800px) {
+
+	#headerBox {
+		margin: 0 auto;
+		width: 50%;
+
+	}
+
 	.navlist {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		font-size: 1.4em;
-		background-color:#142e4721 ;
-		
+		background-color: var(--principal-color);
 	}
+
+	.navlist a {
+		color: white;
+		font-size: 1.8em;
+	}
+
+	.navlist a:hover {
+		color: var(--principal-color);
+		background-color: white;
+	}
+
+
 	#boton {
 		display: none;
 	}
+
+	.heroDiv {
+		height: auto;
+		background-color: #142e47cf;
+		flex-direction: row;
+
+	}
+	.imgDiv {
+		width: 60%;
+		height: 100%;
+		
+	}
+	
+	.textbtnDiv{
+		width: 20%;
+	}
+
+
 
 
 

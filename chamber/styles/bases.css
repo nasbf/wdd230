@@ -17,9 +17,13 @@
 }
 
 header {
-    display: flex;
     background-color: var(--soft-background-color);
-    color: var(--p-color);
+}
+
+#headerBox {
+    display: flex;
+
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 1.2rem;
     font-family: var(--principal-font-family);
@@ -80,48 +84,52 @@ header {
 
 
 
-.navigation a:hover {
+nav a:hover {
+    width: 100%;
     background-color: var(--principal-color);
     color: var(--second-color);
     font-family: var(--principal-font-family);
 }
 
-
-
-.hero {
-    display: block;
-    background-color: #142E47;
+.heroDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: #142e47;
     align-items: center;
     height: auto;
     padding: 30px;
-
+    gap: 20px
 }
 
 
-.hero img {
-    display: flex;
-    flex-direction: column;
-    ;
+.imgDiv img {
     width: 100%;
-    height: 100%;
+    height: auto;
     box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.3);
 }
 
-.hero p {
+.textbtnDiv p{
+    display: flex;
+    padding: 20px;
     color: var(--second-color);
     font-size: 2rem;
     text-align: center;
 
 }
-
-.hero button {
+.buttonDiv{
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    width: 180px;
-    height: 30px;
-    color: var(--hard-background-color);
-    font-family: var(--principal-font-family);
+}
+
+.buttonDiv button {
+    display: flex;
+    padding: 8px;
+    font-family: var(--second-font);
     font-weight: 700;
+    color: var(--hard-background-color);
     cursor: pointer;
+    
 }
 
 footer {
