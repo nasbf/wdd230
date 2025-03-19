@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+img {
+    width: 100%;
+    background-color: antiquewhite;
+    animation: fade 15s;
+}
+footer{
+    background-color: rgb(29, 46, 41);
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+        filter: brightness(0);
+    }
+
+    100% {
+        opacity: 1.8;
+        filter: brightness(1);
+    }
+
+
+}
