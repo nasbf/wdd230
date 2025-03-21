@@ -28,7 +28,7 @@
     <header>
         <div id="up-container" class="upContainer">
             <div id="img-div" class="imgDiv">
-                <img src="images/mi-imagen.webp" alt="Alexandra Suárez" width="75" height="100">
+                <img src="images/mi-imagen.webp" alt="Alexandra Suárez" loading="lazy" width="75" height="100">
             </div>
             <div id="name-div" class="nameDiv">
                 <h1>Alexandra Suárez</h1>
@@ -57,72 +57,102 @@
     </header>
 
     <main>
-        <h1 id=firstTitle>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul class="weeks">
-                <li>Week 01
-                    <ul>
-                        <li><a href="week01/holygrail.html">Layout</a></li>
-                        <li><a href="week01/media-query.html">Media Query</a></li>
-                        <li><a href="#">#</a></li>
-                    </ul>
-                </li>
+        <div id="heroImg" class="heroImg">
+            <picture>
+                <source srcset='images/small.webp' media="(max-width:500px)">
+                <source srcset="images/medium.webp" media="(max-width:1000px)">
+                <img src="images/barranquilla.jpg" alt="Barranquilla Temple" loading="lazy" width="2" height="1">
+            </picture>
+            <div id="tmpleName" class="templeName">
+                <span>Colombia,</span>
+                <span>Barranquilla Temple </span>
 
-                <li>Week 02
-                    <ul>
-                        <li><a href="week02/design.html">web Design</a></li>
-                        <li><a href="week02/bom.html">DOM</a></li>
-                        <li><a href="https://codepen.io/Alexandra-Suarez/pen/pvoWWZE">Js pen</a></li>
-                    </ul>
-                </li>
+            </div>
+        </div>
+        <div id="firstTitle" class="firstTitle">
+            <h1>WDD 230: Web Frontend Development</h1>
+        </div>
+        <div id="sections" class="sections">
+            <section class="card">
+                <h2>Learning Activities</h2>
 
-                <li>week 03
-                    <ul>
-                        <li><a href="week03/images/landscape.webp">WebP</a></li>
-                        <li><a href="week03/lazyload.html">Lazy Load</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                    </ul>
-                </li>
-                <li>week 04
-                    <ul>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                    </ul>
-                </li>
-                <li>week 05
-                    <ul>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                    </ul>
-                </li>
-                <li>week 06
-                    <ul>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                        <li><a href="#">#</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul class="weeks">
+                    <li>Week 01
+                        <ul>
+                            <li><a href="week01/holygrail.html">Layout</a></li>
+                            <li><a href="week01/media-query.html">Media Query</a></li>
+                            <li><a href="#">#</a></li>
+                        </ul>
+                    </li>
+
+                    <li>Week 02
+                        <ul>
+                            <li><a href="week02/design.html">web Design</a></li>
+                            <li><a href="week02/bom.html">DOM</a></li>
+                            <li><a href="https://codepen.io/Alexandra-Suarez/pen/pvoWWZE">Js pen</a></li>
+                        </ul>
+                    </li>
+
+                    <li>week 03
+                        <ul>
+                            <li><a href="week03/images/landscape.webp">WebP</a></li>
+                            <li><a href="week03/lazyload.html">Lazy Load</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                        </ul>
+                    </li>
+                    <li>week 04
+                        <ul>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                        </ul>
+                    </li>
+                    <li>week 05
+                        <ul>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                        </ul>
+                    </li>
+                    <li>week 06
+                        <ul>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <div id="infoDiv" class="infoDiv">
+                    <h3>🌦76℃ Sunshine</h3>
+                    <span>Visit Count: <span class=counterVisits> </span></span>
+
+                </div>
+
+
+
+            </section>
+
+
+        </div>
+        <div id="googleMaps" class="googleMaps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3975.5332477056454!2d-74.2637353!3d4.8498908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f7fdfd00526bb%3A0xf07b90dd09e0d891!2sCat-Chorros!5e0!3m2!1ses!2sco!4v1742566010937!5m2!1ses!2sco"
+                width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
 
 
 
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <h3>#</h3>
-            <h3>#</h3>
-            <h3>#</h3>
 
-        </section>
     </main>
     <footer>
         <p id="info"></p>

@@ -35,3 +35,15 @@ bgrbtnDiv.addEventListener("click", () => {
         bgrbtnDiv.textContent = "🌓";
     }
 });
+const visitsDisplay = document.querySelector('.counterVisits');
+
+let numVisits = Number(window.localStorage.getItem('visits_Is')) || 0;
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `Welcome, this is your first visit`;
+}
+numVisits++;
+
+localStorage.setItem("visits_Is", numVisits);
