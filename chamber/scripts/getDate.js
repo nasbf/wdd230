@@ -14,17 +14,22 @@ hamburguer.addEventListener('click', () => {
 	navlist.classList.toggle("show");
 	hamburguer.classList.toggle("show");
 })
+const actualDate = new Date();
+const visitsDisplay = document.querySelector('#visitMessage');
 
-/* const visitsDisplay = document.querySelector('#counterVisits');
+let numVisits = Number(window.localStorage.getItem('visits_Is')) || 0;
 
-let numVisits = number(window.localStorage.getItem('visits_Is')) || 0;
-
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+if (numVisits !== actualDate) {
+		visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
 }
-else {
-	visitsDisplay.textContent = `Welcome, this is your first visit`;
+/* else if (numVisits ) {
+	visitsDisplay.textContent = `Back so soon! Awesome!`;
 }
+ */else {
+	visitsDisplay.textContent = `You last visited ${numVisits} days ago.`;
+}
+
+
 numVisits++;
 
-localStorage.setItem("visits_Is", numVisits); */
+localStorage.setItem("visits_Is", numVisits);
