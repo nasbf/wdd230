@@ -45,9 +45,9 @@
 		width: 20%;
 	}
 
-	
-	
- 
+
+	/* desing discovery html */
+
 	#activitiesSection {
 		display: none;
 	}
@@ -82,15 +82,22 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 
+
 	}
 
-	/* .generalDataDiv h2{
-		text-align: center;
-		font-family: var(--second-font);
-	} */
 	.generalDataDiv {
 		gap: 90px;
-		
+
 	}
 
+	figure:hover img {
+		transform: scale(1.1);
+
+	}
+
+	footer{
+		flex-direction: row;
+		justify-content: center;
+		gap: 200px;
+	}
 }
