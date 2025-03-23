@@ -79,7 +79,7 @@ header {
     cursor: pointer;
 }
 
-#title{
+#title {
     text-align: center;
     margin-top: 30px;
     font-family: var(--second-font);
@@ -87,7 +87,8 @@ header {
     padding: 10px;
 
 }
-.generalDataDiv h2{
+
+.generalDataDiv h2 {
     text-align: center;
     font-family: var(--second-font);
     font-size: 1.1em;
@@ -151,7 +152,11 @@ footer {
     background-color: var(--soft-background-color);
     font-family: var(--second-font);
     padding: 30px;
+    gap: 25px;
+    text-align: center;
 }
+
+/*design discover html*/
 .titlesDiv {
     display: flex;
     flex-direction: column;
@@ -159,10 +164,12 @@ footer {
     font-family: var(--second-font);
     font-size: 0.8em;
 }
-#secondSection{
+
+#secondSection {
     display: none;
 }
-#activitiesSection{
+
+#activitiesSection {
     font-family: var(--second-font);
     text-align: center;
     padding-top: 25px;
@@ -203,7 +210,7 @@ footer {
     box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.3);
 }
 
-.infoDiv  {
+.infoDiv {
     box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.737);
     display: flex;
     flex-direction: column;
@@ -215,15 +222,16 @@ footer {
 
 }
 
-.infoDiv h2{
+.infoDiv h2 {
     color: var(--principal-color);
     background-color: #142e4736;
 
 }
-#visitMessage{
+
+#visitMessage {
     color: var(--principal-color);
     background-color: #142e4736;
-} 
+}
 
 .generalDataDiv {
     display: flex;
@@ -238,7 +246,14 @@ footer {
 
 }
 
-
+/* footer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    font-size: ;
+}
+ */
 /* 
 .imagesDiv figcaption {
     font-family: var(--second-font);
