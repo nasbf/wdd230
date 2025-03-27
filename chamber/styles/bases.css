@@ -72,10 +72,9 @@ header {
 #boton {
     border: none;
     font-size: 1.5em;
-    background-color: none;
     position: absolute;
     right: 10px;
-    top: 180px;
+    top: 70px;
     cursor: pointer;
 }
 
@@ -246,16 +245,45 @@ footer {
 
 }
 
-/* footer{
+/*finish css dicover.html*/
+/*------- ---- --- ---- ---- ---*/
+
+/*css index.html sections main*/
+.section-side {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 50px;
+}
+
+.sideBar {
+    width: 100%;
+    box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.737);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: var(--soft-background-color);
+    font-family: var(--principal-font-family);
     text-align: center;
-    font-size: ;
+    padding: 25px;
 }
- */
-/* 
-.imagesDiv figcaption {
+
+.spotlight {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
     font-family: var(--second-font);
-    color: red;
-} */
+}
+
+.spotlight h1 {
+    text-align: center;
+    font-family: var(--principal-font-family);
+    font-size: 1.5em;
+    color: var(--principal-color);
+}

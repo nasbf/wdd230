@@ -9,7 +9,7 @@
         margin-right: 25%;
         font-size: 1rem;
     }
-    
+
     .menuList {
         display: flex;
         flex-direction: row;
@@ -22,7 +22,7 @@
         font-size: 0.7em;
         font-family: "Poltawski Nowy";
     }
-    
+
 
     .menu {
         display: flex;
@@ -35,8 +35,8 @@
     .menu a {
         font-family: "Poltawski Nowy";
         padding: 5px;
-          
-        
+
+
     }
 
 
@@ -100,10 +100,7 @@
         /* La primera sección será más ancha */
     }
 
-    .card:last-child {
-        flex-grow: 1;
-        /* La segunda sección será más estrecha */
-    }
+
 
 
     .weeks {

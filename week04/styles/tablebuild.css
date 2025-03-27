@@ -1,0 +1,63 @@
+table {
+    width: 80%;
+    border: 1px solid;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.268);
+    padding: 13px;
+}
+
+table tr:first-child {
+    background-color: black;
+    color: white;
+    font-family: "arial";
+    font-size: 1.3em;
+
+}
+
+table tr:nth-child(2) th:first-child {
+    background-color: black;
+}
+
+table tr:nth-child(2) {
+    background-color: rgb(46, 43, 43);
+    color: white;
+    font-family: "arial";
+}
+
+tr:nth-child(even) {
+    background-color: rgb(222, 221, 221);
+}
+
+tbody tr:nth-child(3) td {
+    color: green;
+}
+tbody tr:nth-child(4) td:nth-child(2){
+    color: red;
+}
+tbody tr:nth-child(4) td:nth-child(3){
+    color: green;
+}
+tbody tr:nth-child(4) td:nth-child(4){
+    color: green;
+}
+
+tbody tr:nth-child(5) td:nth-child(2){
+    color: red;
+}
+tbody tr:nth-child(5) td:nth-child(3){
+    color: red;
+}
+tbody tr:nth-child(5) td:nth-child(4){
+    color: green;
+}
+caption{
+    caption-side: bottom;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}

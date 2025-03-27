@@ -36,7 +36,7 @@
 	}
 
 	.imgDiv {
-		width: 60%;
+		width: 80%;
 		height: 100%;
 
 	}
@@ -100,4 +100,17 @@
 		justify-content: center;
 		gap: 200px;
 	}
+
+	/*finish css discover */
+	/* ------ ------ ------*/
+
+
+	.divSections {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 250px auto;
+
+	}
+	
+
 }
