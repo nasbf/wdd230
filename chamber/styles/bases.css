@@ -72,7 +72,7 @@ header {
 #boton {
     border: none;
     font-size: 1.5em;
-    
+
     position: absolute;
     right: 10px;
     top: 70px;
@@ -281,4 +281,4 @@ footer {
     gap: 20px;
     font-family: var(--second-font);
     color: red;
-} */
+}
