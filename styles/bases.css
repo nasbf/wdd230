@@ -49,8 +49,8 @@ header {
 
 
 }
-
-/* .buttonsDiv {
+/* 
+.buttonsDiv {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -78,6 +78,7 @@ header {
     font-style: normal;
     text-decoration: none;
     color: black;
+    z-index: 2;
 
 }
 

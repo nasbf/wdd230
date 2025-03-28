@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+    .imgDiv {
+        display: flex;
+        margin-left: 30%;
+
+    }
+
+    .nameDiv {
+        margin-right: 25%;
+        font-size: 1rem;
+    }
+
+    .menuList {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        left: 0.1px;
+        top: 195px;
+        background-color: rgba(61, 38, 12, 0.282);
+        justify-content: space-around;
+        font-size: 0.7em;
+        font-family: "Poltawski Nowy";
+        margin-bottom: 125px;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%
+    }
+
+    .menu a {
+        font-family: "Poltawski Nowy";
+        padding: 5px;
+
+
+    }
+
+
+
+    #menuBtn {
+        display: none;
+    }
+
+    .f1 {
+        max-width: 400px;
+        margin: 30px auto;
+    }
+
+    #confirmationDiv {
+        width: 30%;
+        margin: 10% auto;
+    }
+}

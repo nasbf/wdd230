@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Team Activity - Form"</title>
+    <meta name="description" content="Demostrate understanding of the learning activities">
+    <meta name="author" content="Alexandra Suárez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/logo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger_form.css">
+
+    <meta property="og:title" content="Alexandra Suarez - WDD 230 - Web Fronted Development">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development">
+    <meta property="og:image" content="images/Sunset-cartagena-tower-dewired.jpg">
+    <meta property="og:url" content="https://nasbf.github.io/wdd230/index.html">
+    <script src="scripts/form.js" defer></script>
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div id="up-container" class="upContainer">
+            <div id="img-div" class="imgDiv">
+                <img src="images/mi-imagen.webp" alt="Alexandra Suárez" loading="lazy" width="75" height="100">
+            </div>
+            <div id="name-div" class="nameDiv">
+                <h1>Alexandra Suárez</h1>
+            </div>
+            <div id="buttonsDiv" class="buttons-div">
+                <div id="bgrbtn-div" class="bgrbtnDiv">
+                    🌓
+                    <!-- <img src='images/dark-theme-svgrepo-com.svg' alt='dark theme' id='dark-theme' width='44' height='44'> -->
+                </div>
+                <div id="menuBtn" class="menuBtn"></div>
+                <nav id="menuList" class="menuList">
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="chamber/index.html">Chamber</a></li>
+                        <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                        <li><a href="#">Form</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form method="get" action="record.html" id="f1" class="f1">
+
+            <label>Username * <input type="text" id="username" name="username" required></label>
+
+            <label>Password * <input type="password" id="password" name="password" required pattern="[A-Za-z]{8,}"
+                    title="Must contain least 8 letters, lowercase or uppercase"></label>
+            <label>Confirm Your Password * <input type="password" id="confirm_upassword" name="confirm_upassword"
+                    required pattern="[A-Za-z]{8,}"
+                    title="Must contain least 8 letters, lowercase or uppercase"></label>
+            <div id="alert_message"></div>
+
+            <label>Email * <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
+                    placeholder="someone@byui.edu" title="Please enter a valid email address"></label>
+            <div id="ratingDiv" class="ratingDiv">
+                <label>Page Rating</label>
+                <div id="rangevalue">1</div>
+                <input type="range" id="range" name="range" min="1" max="10" value="1" step="1" list="rangevalues">
+
+                <datalist id="rangevalues">
+
+                    <option value="1">1</option>>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </div>
+
+            <input type="submit" value="Register">
+
+        </form>
+    </main>
+    <footer>
+        <p id="info"></p>
+        <p id="modified"></p>
+    </footer>
+</body>
+
+</html>
