@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Team Activity - Form"</title>
-    <meta name="description" content="Demostrate understanding of the learning activities, work in team with form in HTML and CSS ">
+    <meta name="description"
+        content="Demostrate understanding of the learning activities, work in team with form in HTML and CSS ">
     <meta name="author" content="Alexandra Suárez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,11 +61,10 @@
 
             <label>Username * <input type="text" id="username" name="username" required></label>
 
-            <label>Password * <input type="password" id="password" name="password" required pattern="[A-Za-z]{8,}"
-                    title="Must contain least 8 letters, lowercase or uppercase"></label>
+            <label>Password * <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"
+                    title="Must contain least 8 Alphanumeric characters, lowercase or uppercase"></label>
             <label>Confirm Your Password * <input type="password" id="confirm_upassword" name="confirm_upassword"
-                    required pattern="[A-Za-z]{8,}"
-                    title="Must contain least 8 letters, lowercase or uppercase"></label>
+                    required pattern="[A-Za-z0-9]{8,}" title="Write again the same password"></label>
             <div id="alert_message"></div>
 
             <label>Email * <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
