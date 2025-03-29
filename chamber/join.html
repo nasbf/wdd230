@@ -44,84 +44,87 @@
     </nav>
 
     <main>
-        <div id="benefitsDiv" class="benefitsDiv">
-            <h1>MEMBERSHIP LEVEL BENEFITS</h1>
-            <div id="npBenefits" class="benefits">
-                <h2>Non-Profit Membership</h2>
-                <ul>
-                    <li>Limited tecnical advice </li>
-                    <li>Small discounts (5% on purchases and maintenance)</li>
-                    <li>One free diagnostic per year</li>
-                </ul>
-                <h2>Free</h2>
+        <div id="formContainer">
+
+            <div id="benefitsDiv" class="benefitsDiv">
+                <h1>MEMBERSHIP LEVEL BENEFITS</h1>
+                <div id="npBenefits" class="benefits">
+                    <h2>Non-Profit Membership</h2>
+                    <ul>
+                        <li>Limited tecnical advice </li>
+                        <li>Small discounts (5% on purchases and maintenance)</li>
+                        <li>One free diagnostic per year</li>
+                    </ul>
+                    <h2>Free</h2>
+                </div>
+                <div id="BronzeBenefits" class="benefits">
+                    <h2>Bronze Membership</h2>
+                    <ul>
+                        <li>Priority technical support (response within 24 hours)</li>
+                        <li>Preventive maintenance (2 check-ups per year)</li>
+                        <li>Extended consulting (up to 2 hours per month)</li>
+                    </ul>
+                    <h2>$50 month</h2>
+                </div>
+                <div id="silverBenefits" class="benefits">
+                    <h2>Silver Membership</h2>
+                    <ul>
+                        <li>Immediate technical support (response within 12 hours)</li>
+                        <li>Preventive and corrective maintenance (4 check-ups per year)</li>
+                        <li>Unlimited consulting</li>
+                    </ul>
+                    <h2>$100 mont</h2>
+                </div>
+                <div id="goldBenefits" class="benefits">
+                    <h2>Gold Membership</h2>
+                    <ul>
+                        <li>Immediate technical support (response within 5 hours)</li>
+                        <li>Preventive and corrective maintenance (4 check-ups per year)</li>
+                        <li>Greater discounts on products and services (15-20% on purchases and maintenance)</li>
+                        <li>Unlimited consulting</li>
+                        <li>Basic data backup and recovery</li>
+                        <li>Loaner device in case of failure</li>
+                    </ul>
+                    <h2>$170 month</h2>
+                </div>
             </div>
-            <div id="BronzeBenefits" class="benefits">
-                <h2>Bronze Membership</h2>
-                <ul>
-                    <li>Priority technical support (response within 24 hours)</li>
-                    <li>Preventive maintenance (2 check-ups per year)</li>
-                    <li>Extended consulting (up to 2 hours per month)</li>
-                </ul>
-                <h2>$50 month</h2>
-            </div>
-            <div id="silverBenefits" class="benefits">
-                <h2>Silver Membership</h2>
-                <ul>
-                    <li>Immediate technical support (response within 12 hours)</li>
-                    <li>Preventive and corrective maintenance (4 check-ups per year)</li>
-                    <li>Unlimited consulting</li>
-                </ul>
-                <h2>$100 mont</h2>
-            </div>
-            <div id="goldBenefits" class="benefits">
-                <h2>Gold Membership</h2>
-                <ul>
-                    <li>Immediate technical support (response within 5 hours)</li>
-                    <li>Preventive and corrective maintenance (4 check-ups per year)</li>
-                    <li>Greater discounts on products and services (15-20% on purchases and maintenance)</li>
-                    <li>Unlimited consulting</li>
-                    <li>Basic data backup and recovery</li>
-                    <li>Loaner device in case of failure</li>
-                </ul>
-                <h2>$170 month</h2>
-            </div>
+            <form method="get" action="thankyou.html" class="chForm">
+                <h2 class="formTitle">REGISTER NOW TO ENJOY YOR MEMBERSHIP BENEFITS. </h2>
+                <fieldset>
+                    <label>First Name * <input type="text" id="name" name="name" required></label>
+                    <label>Last Name * <input type="text" id="lname" name="lname" required></label>
+                    <label>Title or Position <input type="text" id="userTitle" name="userTitle" pattern="[A-Za-z-\s]{7,}"
+                            title="Can use only letters, space and hiphen"></label>
+                    <label>Email * <input type="email" id="email" name="email" required
+                            placeholder="someone@gmail.com"></label>
+                    <label>Mobile Phone * <input type="tel" id="phone" name="phone" required pattern="[0,9]"
+                            placeholder="3112223232"></label>
+                    <label>Business/Organization's Name * <input type="text" id="business_name" name="business_name"
+                            required></label>
+                </fieldset>
+                <fieldset>
+
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" id="npLevel" name="membership_level">NP</label>
+                    <label><input type="radio" id="bronzeLevel" name="membership_level">Bronze</label>
+                    <label><input type="radio" id="silverLevel" name="membership_level">Silver</label>
+                    <label><input type="radio" id="goldLevel" name="membership_level">Gold</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <textarea name="business_description" id="business_description"></textarea>
+                </fieldset>
+
+
+                <fieldset id="timestamp" class="timestamp">
+                    <legend>Timestamp</legend>
+                    <input type="hidden" id="timeloaded" name="timeloaded">
+
+                </fieldset>
+
+                <input type="submit" value="Register">
+            </form>
         </div>
-        <form method="get" action="thankyou.html" class="chForm">
-            <h2 class="formTitle">REGISTER NOW TO ENJOY YOR MEMBERSHIP BENEFITS. </h2>
-            <fieldset>
-                <label>First Name * <input type="text" id="name" name="name" required></label>
-                <label>Last Name * <input type="text" id="lname" name="lname" required></label>
-                <label>Title or Position <input type="text" id="userTitle" name="userTitle" pattern="[A-Za-z-\s]{7,}"
-                        title="Can use only letters, space and hiphen"></label>
-                <label>Email * <input type="email" id="email" name="email" required
-                        placeholder="someone@gmail.com"></label>
-                <label>Mobile Phone * <input type="tel" id="phone" name="phone" required pattern="[0,9]"
-                        placeholder="3112223232"></label>
-                <label>Business/Organization's Name * <input type="text" id="business_name" name="business_name"
-                        required></label>
-            </fieldset>
-            <fieldset>
-
-                <legend>Membership Level</legend>
-                <label><input type="radio" id="npLevel" name="membership_level">NP</label>
-                <label><input type="radio" id="bronzeLevel" name="membership_level">Bronze</label>
-                <label><input type="radio" id="silverLevel" name="membership_level">Silver</label>
-                <label><input type="radio" id="goldLevel" name="membership_level">Gold</label>
-            </fieldset>
-            <fieldset>
-                <legend>Business Description</legend>
-                <textarea name="business_description" id="business_description"></textarea>
-            </fieldset>
-
-
-            <fieldset id="timestamp" class="timestamp">
-                <legend>Timestamp</legend>
-                <input type="hidden" id="timeloaded" name="timeloaded">
-
-            </fieldset>
-
-            <input type="submit" value="Register">
-        </form>
 
 
 
