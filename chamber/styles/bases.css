@@ -282,3 +282,103 @@ footer {
     font-family: var(--second-font);
 
 }
+
+/*-----form design ------*/
+
+.benefitsDiv {
+    display: none;
+}
+
+.timestamp {
+    display: none;
+}
+.formTitle{
+    font-family: var(--second-font);
+    text-align: center;
+    font-size: 1em;
+    padding: 20px;
+
+}
+
+
+.chForm fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 400px;
+    background-color: rgba(128, 128, 128, 0.163);
+    border: none;
+    margin: 2% auto;
+    margin-top: 20px;
+}
+
+.chForm textarea {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+    color: var(--principal-color);
+    font-family: var(--principal-font-family);
+    font-size: 1.1em;
+
+
+}
+
+.chForm label {
+    display: block;
+    font-family: var(--principal-font-family);
+    color: var(--principal-color);
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+.chForm input[type="text"],
+.chForm input[type="email"],
+.chForm input[type="phone"] {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: .70rem;
+}
+
+.chForm legend {
+    font-family: var(--principal-font-family);
+    color: var(--principal-color);
+    font-size: 1.1em;
+    padding: 0 .5rem;
+}
+
+.chForm input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.chForm input[type="submit"] {
+
+    border: none;
+    border-radius: 3px;
+    background-color: var(--principal-color);
+    padding: 0.4em;
+    color: white;
+    width: 60%;
+    max-width: 400px;
+    margin: 2rem 20% 2rem 20%;
+    font-size: 1.3em;
+    cursor: pointer;
+
+}
+
+.chForm input:required {
+    border-left: 2px solid rgba(255, 0, 0, 0.458);
+
+}
+/*----thankyou.html desing ----*/
+
+#confirmationDiv {
+    width: 90%;
+    padding: 20px;
+    margin: 15% auto;
+    text-align: center;
+
+
+}

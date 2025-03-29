@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"W02: Project - The Chamber of Commerce Form Page"</title>
+    <meta name="description" content="Create a Form Page of Chamber applying learning activities concepts.">
+    <meta name="author" content="Alexandra Suárez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bases.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Alexandra Suarez - Colombia Chamber of Commerce">
+    <meta property="og:description" content="Colombia Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nasbf.github.io/wdd230/chamber/images/services.jpg">
+    <meta property="og:url" content="https://nasbf.github.io/wdd230/chamber/index.html">
+    <script src="scripts/getDate.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="headerBox">
+            <img src="images/logo.png" alt="Alexandra Suárez" width="90" height="70">
+            <span>Colombia Chamber of Commerce</span>
+        </div>
+
+    </header>
+
+    <nav>
+        <button id="boton"></button>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="benefitsDiv" class="benefitsDiv">
+            <h1>MEMBERSHIP LEVEL BENEFITS</h1>
+            <div id="npBenefits" class="benefits">
+                <h2>Non-Profit Membership</h2>
+                <ul>
+                    <li>Limited tecnical advice </li>
+                    <li>Small discounts (5% on purchases and maintenance)</li>
+                    <li>One free diagnostic per year</li>
+                </ul>
+                <h2>Free</h2>
+            </div>
+            <div id="BronzeBenefits" class="benefits">
+                <h2>Bronze Membership</h2>
+                <ul>
+                    <li>Priority technical support (response within 24 hours)</li>
+                    <li>Preventive maintenance (2 check-ups per year)</li>
+                    <li>Extended consulting (up to 2 hours per month)</li>
+                </ul>
+                <h2>$50 month</h2>
+            </div>
+            <div id="silverBenefits" class="benefits">
+                <h2>Silver Membership</h2>
+                <ul>
+                    <li>Immediate technical support (response within 12 hours)</li>
+                    <li>Preventive and corrective maintenance (4 check-ups per year)</li>
+                    <li>Unlimited consulting</li>
+                </ul>
+                <h2>$100 mont</h2>
+            </div>
+            <div id="goldBenefits" class="benefits">
+                <h2>Gold Membership</h2>
+                <ul>
+                    <li>Immediate technical support (response within 5 hours)</li>
+                    <li>Preventive and corrective maintenance (4 check-ups per year)</li>
+                    <li>Greater discounts on products and services (15-20% on purchases and maintenance)</li>
+                    <li>Unlimited consulting</li>
+                    <li>Basic data backup and recovery</li>
+                    <li>Loaner device in case of failure</li>
+                </ul>
+                <h2>$170 month</h2>
+            </div>
+        </div>
+        <form method="get" action="thankyou.html" class="chForm">
+            <h2 class="formTitle">REGISTER NOW TO ENJOY YOR MEMBERSHIP BENEFITS. </h2>
+            <fieldset>
+                <label>First Name * <input type="text" id="name" name="name" required></label>
+                <label>Last Name * <input type="text" id="lname" name="lname" required></label>
+                <label>Title or Position <input type="text" id="userTitle" name="userTitle" pattern="[A-Za-z-\s]{7,}"
+                        title="Can use only letters, space and hiphen"></label>
+                <label>Email * <input type="email" id="email" name="email" required
+                        placeholder="someone@gmail.com"></label>
+                <label>Mobile Phone * <input type="phone" id="phone" name="phone" required
+                        placeholder="3112223232"></label>
+                <label>Business/Organization's Name * <input type="text" id="business_name" name="business_name"
+                        required></label>
+            </fieldset>
+            <fieldset>
+
+                <legend>Membership Level</legend>
+                <label><input type="radio" id="membership_level" name="membership_level">NP</label>
+                <label><input type="radio" id="membership_level" name="membership_level">Bronze</label>
+                <label><input type="radio" id="membership_level" name="membership_level">Silver</label>
+                <label><input type="radio" id="membership_level" name="membership_level">Gold</label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <textarea name="business_description" id="business_description"></textarea>
+            </fieldset>
+
+
+            <div id="timestamp" class="timestamp">
+                <legend>Timestamp</legend>
+                <input type="hidden" id="timestamp" name="timestamp">
+
+            </div>
+
+            <input type="submit" value="Register">
+        </form>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div id=footeInfo class="footerInfo">
+            <p>123 Main Street Bogotá - Colombia</p>
+            <p>+57 311 466 09 33</p>
+            <p>info@colchamber.com</p>
+        </div>
+        <div id="dateInfo" class="dateInfo">
+            <p id="info"></p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
