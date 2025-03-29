@@ -13,9 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/bases.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <meta property="og:title" content="Alexandra Suarez - Colombia Chamber of Commerce">
     <meta property="og:description" content="Colombia Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -93,8 +93,8 @@
                 <fieldset>
                     <label>First Name * <input type="text" id="name" name="name" required></label>
                     <label>Last Name * <input type="text" id="lname" name="lname" required></label>
-                    <label>Title or Position <input type="text" id="userTitle" name="userTitle" pattern="[A-Za-z-\s]{7,}"
-                            title="Can use only letters, space and hiphen"></label>
+                    <label>Title or Position <input type="text" id="userTitle" name="userTitle"
+                            pattern="[A-Za-z-\s]{7,}" title="Can use only letters, space and hiphen"></label>
                     <label>Email * <input type="email" id="email" name="email" required
                             placeholder="someone@gmail.com"></label>
                     <label>Mobile Phone * <input type="tel" id="phone" name="phone" required pattern="[0,9]"
@@ -122,7 +122,7 @@
 
                 </fieldset>
 
-                <input type="submit" value="Register">
+                <input id="timestamp" type="submit" value="Register">
             </form>
         </div>
 
