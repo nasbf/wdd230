@@ -95,7 +95,7 @@
                         title="Can use only letters, space and hiphen"></label>
                 <label>Email * <input type="email" id="email" name="email" required
                         placeholder="someone@gmail.com"></label>
-                <label>Mobile Phone * <input type="phone" id="phone" name="phone" required
+                <label>Mobile Phone * <input type="tel" id="phone" name="phone" required
                         placeholder="3112223232"></label>
                 <label>Business/Organization's Name * <input type="text" id="business_name" name="business_name"
                         required></label>
@@ -103,10 +103,10 @@
             <fieldset>
 
                 <legend>Membership Level</legend>
-                <label><input type="radio" id="membership_level" name="membership_level">NP</label>
-                <label><input type="radio" id="membership_level" name="membership_level">Bronze</label>
-                <label><input type="radio" id="membership_level" name="membership_level">Silver</label>
-                <label><input type="radio" id="membership_level" name="membership_level">Gold</label>
+                <label><input type="radio" id="npLevel" name="membership_level">NP</label>
+                <label><input type="radio" id="bronzeLevel" name="membership_level">Bronze</label>
+                <label><input type="radio" id="silverLevel" name="membership_level">Silver</label>
+                <label><input type="radio" id="goldLevel" name="membership_level">Gold</label>
             </fieldset>
             <fieldset>
                 <legend>Business Description</legend>
@@ -114,11 +114,11 @@
             </fieldset>
 
 
-            <div id="timestamp" class="timestamp">
+            <fieldset id="timestamp" class="timestamp">
                 <legend>Timestamp</legend>
-                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="hidden" id="timeloaded" name="timeloaded">
 
-            </div>
+            </fieldset>
 
             <input type="submit" value="Register">
         </form>
