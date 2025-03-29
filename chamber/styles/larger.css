@@ -1,5 +1,14 @@
 @media screen and (min-width: 800px) {
-
+	:root {
+		--principal-font-family: "nono sans", sans-serif;
+		--second-font: "poppins", serif;
+		--principal-color: #142E47;
+		--second-color: aliceblue;
+		--soft-background-color: #142E470d;
+		--hard-background-color: #020507;
+	
+	
+	}
 	#headerBox {
 		margin: 0 auto;
 		width: 50%;
