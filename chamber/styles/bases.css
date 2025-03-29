@@ -292,7 +292,8 @@ footer {
 .timestamp {
     display: none;
 }
-.formTitle{
+
+.formTitle {
     font-family: var(--second-font);
     text-align: center;
     font-size: 1em;
@@ -335,7 +336,7 @@ footer {
 
 .chForm input[type="text"],
 .chForm input[type="email"],
-.chForm input[type="phone"] {
+.chForm input[type="tel"] {
     display: block;
     width: 100%;
     border: none;
@@ -372,6 +373,7 @@ footer {
     border-left: 2px solid rgba(255, 0, 0, 0.458);
 
 }
+
 /*----thankyou.html desing ----*/
 
 #confirmationDiv {
