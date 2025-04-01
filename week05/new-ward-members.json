@@ -1,0 +1,55 @@
+{
+    "newMembersWard": [
+        {
+            "familyName": "Fajardo Sanchez",
+            "dateMovetoWard": "march 2025",
+            "numberofPeopel": 3,
+            "vesited": "true",
+            "members": [
+                {
+                    "name": "Hermelinda Sanchez",
+                    "gender": "Female",
+                    "birthdate": "june 12"
+                },
+                {
+                    "name": "Esteban Fajardo",
+                    "gender": "Male",
+                    "birthdate": "may 3"
+                },
+                {
+                    "name": "Any Fajardo",
+                    "gender": "Female",
+                    "birthdate": "january 7"
+                }
+            ]
+        },
+        {
+            "familyName": "Hernandez",
+            "dateMovetoWard": "february 2025",
+            "numberofPeopel": 4,
+            "vesited": "true",
+            "members": [
+                {
+                    "name": "Luis hernandez",
+                    "gender": "Male",
+                    "birthdate": "november 9"
+                },
+                {
+                    "name": "Janeth Suárez",
+                    "gender": "Female",
+                    "birthdate": "february 17"
+                },
+                {
+                    "name": "Samuel hernandez",
+                    "gender": "Male",
+                    "birthdate": "january 9"
+                },
+                {
+                    "name": "Mateo hernandez",
+                    "gender": "Male",
+                    "birthdate": "june 26"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: rgba(243, 199, 146, 0.437);
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.8em;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: solid rgba(82, 62, 3, 0.428);
+    ;
+
+
+}
+
+.card {
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(213, 222, 242, 0.423);
+
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: "Poltawski Nowy", serif;
+    font-weight: 300;
+    margin: 20px auto;
+    color: rgb(61, 38, 12);
+
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+
+}
+
+img {
+    
+    margin: 20% auto;
+    box-shadow: 5px 5px 10px rgba(44, 29, 2, 0.9);
+
+}
