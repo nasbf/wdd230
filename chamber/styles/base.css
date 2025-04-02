@@ -149,8 +149,9 @@ nav a:hover {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--soft-background-color);
+    background-color: var(--principal-color);
     font-family: var(--second-font);
+    color: white;
     padding: 30px;
     gap: 25px;
     text-align: center;
