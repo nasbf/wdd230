@@ -283,6 +283,39 @@ footer {
     font-family: var(--second-font);
 
 }
+.spotlight h1{
+
+    text-align: center;
+    font-family: var(--second-font);
+}
+
+.spotlight-item {
+    box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.737);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.spotlight h2 {
+    padding: 10px;
+    color: var(--principal-color);
+    text-align: center;
+}
+
+.spotlight-item p {
+    font-family: var(--principal-font-family);
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.companyInfo {
+    margin: 15px auto;
+
+}
 
 /*-----form design ------*/
 

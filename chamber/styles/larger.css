@@ -54,6 +54,11 @@
 		width: 20%;
 	}
 
+	.spotlight-item{
+		width: 80%;
+		margin: 0 auto;
+		height: 240px;
+	}
 
 	/* desing discovery html */
 

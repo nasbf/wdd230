@@ -1,0 +1,96 @@
+{
+    "weeks": [
+        {
+            "week": "week1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holygrial Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "week01/"
+                }
+            ]
+        },
+        {
+            "week": "week2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Web design"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM"
+                },
+                {
+                    "url": "https://codepen.io/Alexandra-Suarez/pen/pvoWWZE",
+                    "title": "Js pen"
+                }
+            ]
+        },
+        {
+            "week": "week3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazyload"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Bom"
+                }
+            ]
+        },
+        {
+            "week": "week4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Alexandra-Suarez/pen/QwWBBrB?editors=1100",
+                    "title": "Pseudoclases"
+                },
+                {
+                    "url": "week04/images/css-combinators.JPG",
+                    "title": "Css Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Tablebuilt"
+                },
+                {
+                    "url": "week04/Form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "week": "week05",
+            "links": [
+                {
+                    "url": "https://codepen.io/Alexandra-Suarez/pen/XJWyrZM?editors=0100",
+                    "title": "Codepen"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "Json file"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather"
+                }
+            ]
+        }
+    ]
+}

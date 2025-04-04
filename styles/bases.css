@@ -49,6 +49,7 @@ header {
 
 
 }
+
 /* 
 .buttonsDiv {
     display: flex;
@@ -97,7 +98,7 @@ header {
     color: rgb(61, 38, 12);
     border: none;
     cursor: pointer;
-    
+
     font-style: normal;
 
 }
@@ -200,6 +201,7 @@ header {
     display: block;
     text-align: center;
     font-family: "Poltawski Nowy";
+    color: rgb(61, 38, 12);
     font-size: 1.7em;
     padding: 1rem;
     border-bottom: solid rgba(82, 62, 3, 0.428);
@@ -235,16 +237,26 @@ li {
 .infoDiv {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
     width: 100%;
-    padding: 35px;
+    padding: 25px;
     margin-top: 20px;
     font-family: "Poltawski Nowy";
     font-size: 1.4em;
     text-align: center;
+    background-color: rgba(243, 199, 146, 0.437);
 }
 
+.infoDiv p {
+    
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+
 .counterVisits {
+    background-color: rgb(235, 235, 181);
+    padding: 20px;
     color: rgb(61, 38, 12);
 }
 
