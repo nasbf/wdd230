@@ -1,11 +1,11 @@
 const baseURL = "https://nasbf.github.io/wdd230/";
-const linksURL = `${baseURL}data/links.json`;
+const linksURL = `https://nasbf.github.io/wdd230/data/links.json`;
 
 async function getLinks() {
     try {
         const response = await fetch(linksURL);
         if (!response.ok) 
-            throw new Error("Fil JSON is not accesible");
+            throw new Error("File JSON is not accesible");
         const data = await response.json();
         displayLinks(data.weeks);
     } catch (error) {
@@ -41,36 +41,3 @@ getLinks();
             
             
             
-        
-
-        /* 
-        const cardDiv= document.createElement ("div");
-        
-        const fullName = document.createElement("h2");
-        fullName.textContent = `${weeks.week}}`;
-
-        const birthDate = document.createElement("h3");
-        birthDate.textContent = `${prophet.birthdate}`;
-
-        const birthPlace = document.createElement("h3");
-        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
-
-
-        const portrait = document.createElement("img");
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophets.name} ${prophets.lastname}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "180");
-        portrait.setAttribute("height", "250");
-
-        card.appendChild(fullName);
-        card.appendChild(birthDate);
-        card.appendChild(birthPlace);
-        card.appendChild(portrait);
-
-        cards.appendChild(card);
-
-
-
-    });
- */
