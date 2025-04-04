@@ -1,49 +1,43 @@
-const baseURL = "https://nasbf.github.io/wdd230";
-const linksURL = "https://nasbf.github.io/wdd230/data/links.json";
-const font = "data/links.json";
+const baseURL = "https://nasbf.github.io/wdd230/";
+const linksURL = `${baseURL}data/links.json`;
 
-async function getlinks() {
-    
-        const response = await fetch(font);
+async function getLinks() {
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) 
+            throw new Error("Fil JSON is not accesible");
         const data = await response.json();
         displayLinks(data.weeks);
-
+    } catch (error) {
+        console.error("error", error);
+    }
 }
 
-const displayLinks = (weeks) => {
-    const ulNumberWeek = document.querySelector("weeks"); 
-    let card = document.createElement('section');
-    let fullName = document.createElement('h2');
-    
-    fullName.textContent = `${weeks.week}`;
-    card.appendChild(fullName);
-    ulNumberWeek.appendChild(card); // Agrega la tarjeta al contenedor de semanas
+function displayLinks(weeks) {
+    const weeksList = document.getElementById("weeks-list");
+    weeksList.innerHTML = "";
 
-        /* const ulLinks = document.createElement("ul"); 
+    weeks.forEach(week => {
+        const weekItem = document.createElement("li");
+        weekItem.textContent = week.week;
 
+        const activitiesList = document.createElement("ul");
 
-
-        week.links.forEach((linkData) => {
-            if (linkData.url) {
-                const li = document.createElement("li");
-                const link = document.createElement("a");
-                link.setAttribute("href", linkData.url);
-                link.textContent = linkData.title || linkData.url;
-                link.target = "_blank"; // Abre en nueva pestaña
-
-                li.appendChild(link);
-                ulLinks.appendChild(li);
-            }
+        week.links.forEach(link => {
+            const linkItem = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = link.url;
+            a.textContent = link.title;
+            linkItem.appendChild(a);
+            activitiesList.appendChild(linkItem);
         });
 
-        liWeek.appendChild(ulLinks); // Agrega la lista de enlaces dentro del li de la semana
-        ulNumberWeek.appendChild(liWeek); // Agrega todo al <ul class="numberWeek"> */
+        weekItem.appendChild(activitiesList);
+        weeksList.appendChild(weekItem);
     });
-};
+}
 
-getlinks();
-
-    
+getLinks();
             
             
             
