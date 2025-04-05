@@ -12,32 +12,16 @@ async function getLinks() {
         console.error("error", error);
     }
 }
-
-function displayLinks(weeks) {
-    const weeksList = document.getElementById("weeks-list");
-    weeksList.innerHTML = "";
-
-    weeks.forEach(week => {
-        const weekItem = document.createElement("li");
-        weekItem.textContent = week.week;
-
-        const activitiesList = document.createElement("ul");
-
-        week.links.forEach(link => {
-            const linkItem = document.createElement("li");
-            const a = document.createElement("a");
-            a.href = link.url;
-            a.textContent = link.title;
-            linkItem.appendChild(a);
-            activitiesList.appendChild(linkItem);
-        });
-
-        weekItem.appendChild(activitiesList);
-        weeksList.appendChild(weekItem);
-    });
-}
-
 getLinks();
-            
+
+const displayLinks = (weeks) => {
+    const ulNumbers = document.querySelector("#.sections");
+    let section = document.createElement("section");
+    let ul = document.createElement("ul");
+    let li = document.createElement("li");
+    let a = document.createElement("a");
+    let weekNumber = document.createElement("h2");
+    weekNumber.textContent = `${weeks[0].week}`; 
+}
             
             
