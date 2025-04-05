@@ -1,0 +1,57 @@
+{
+    "members": [
+        {
+            "company": "FanorSystem",
+            "adress": "Cra 8 # 6-01 El Rosal/Cundinamarca",
+            "phone": "311 818 52 87",
+            "mail": "famn@hotmail.com",
+            "website": "https://www.fanorsystem.com/",
+            "level": "Gold"
+        },
+        {
+            "company": "Gourmet Real",
+            "adress": "cll 73 # 74-63 Bogotá",
+            "phone": "314 455 62 30",
+            "mail": "gourmet_real@hotmail.com",
+            "website": "https://www.gourmetreal.com/",
+            "level": "silver"
+        },
+        {
+            "company": "Titan Celaning and desinfection",
+            "adress": "Cra 10 # 3-15 Facatativa",
+            "phone": "322 792 00 24",
+            "mail": "titancleaning@gmail.com",
+            "website": "https://www.titancleaning.com/",
+            "level": "NP"
+        },
+        {
+            "company": "Universal Systems",
+            "adress": "cll 78 # 13-03 Bogotá",
+            "phone": "313 485 41 38",
+            "mail": "universalsystem@hotmail.com",
+            "website": "https://www.gourmetreal.com/",
+            "level": "gold"
+        },
+        {
+            "company": "Clickyweb",
+            "adress": "Cra 8 # 6-01 El Rosal/Cundinamarca",
+            "phone": "311 466 09 33",
+            "mail": "clicyweb@gmail.com",
+            "website": "https://www.clickyweb.com/"
+        },
+        {
+            "company": "General Cleaning",
+            "adress": "Cra 9 # 10-28 El Rosal/Cundinamarca",
+            "phone": "310 875 12 96",
+            "mail": "generalcleaning@gmail.com",
+            "website": "https://www.generalcleaning.com/"
+        },
+        {
+            "company": "Expert celaning Car",
+            "adress": "cra 78 # 18-60  Bogotá",
+            "phone": "313 616 20 97",
+            "mail": "cleaning-car@hotmail.com",
+            "website": "https://www.Expertcleaningcar.com/"
+        }
+    ]
+}

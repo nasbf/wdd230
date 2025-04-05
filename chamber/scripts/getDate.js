@@ -14,6 +14,30 @@ hamburguer.addEventListener('click', () => {
 	navlist.classList.toggle("show");
 	hamburguer.classList.toggle("show");
 })
+
+/*----json to directory.html ----*/
+
+const baseURL = "https://nasbf.github.io/wdd230/";
+const linksURL = `https://nasbf.github.io/wdd230/chamber/data/members.json`;
+
+async function getMembers() {
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) 
+            throw new Error("File JSON is not accesible");
+        const data = await response.json();
+		console.log(data.members);
+        /*displayLinks(data.members);*/
+    } catch (error) {
+        console.error("error", error);
+    }
+}
+getMembers();
+
+
+
+
+
 const actualDate = new Date();
 const visitsDisplay = document.querySelector('#visitMessage');
 
@@ -26,10 +50,12 @@ if (numVisits !== actualDate) {
 	visitsDisplay.textContent = `Back so soon! Awesome!`;
 }
  */else {
-	visitsDisplay.textContent = `You last visited ${numVisits} days ago.`;
+	visitsDisplay.textContent = `Your last visited ${numVisits} days ago.`;
 }
 
 
 numVisits++;
 
 localStorage.setItem("visits_Is", numVisits);
+
+
