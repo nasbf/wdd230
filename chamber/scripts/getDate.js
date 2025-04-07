@@ -21,22 +21,59 @@ const baseURL = "https://nasbf.github.io/wdd230/";
 const linksURL = `https://nasbf.github.io/wdd230/chamber/data/members.json`;
 
 async function getMembers() {
-    try {
-        const response = await fetch(linksURL);
-        if (!response.ok) 
-            throw new Error("File JSON is not accesible");
-        const data = await response.json();
+	try {
+		const response = await fetch(linksURL);
+		if (!response.ok)
+			throw new Error("File JSON is not accesible");
+		const data = await response.json();
 		console.log(data.members);
-        /*displayLinks(data.members);*/
-    } catch (error) {
-        console.error("error", error);
-    }
+		displayMembers(data.members);
+	} catch (error) {
+		console.error("error", error);
+	}
 }
 getMembers();
 
+function displayMembers(members) {
+	members.forEach(member => {
+		const grid = document.querySelector("#grid");
+		const card = document.createElement("section");
+		const fullName = document.createElement("h2");
+		const dir = document.createElement("p");
+		const phone = document.createElement("p");
+		const mail = document.createElement("p");
+		const website = document.createElement("p");
+		const level = document.createElement("p");
+		const portrait = document.createElement("img");
+
+		fullName.textContent = `${member.company}`;
+		dir.textContent = `${member.dir}`;
+		phone.textContent = `${member.phone}`;
+		mail.textContent = `${member.mail}`;
+		website.textContent = `${member.website}`;
+		level.textContent = `${member.level}`;
+		portrait.setAttribute("src", member.img);
+        portrait.setAttribute("alt", `Portrait of ${member.company}`);
+        portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width", "180");
+        portrait.setAttribute("height", "250");
+		
+		card.appendChild(fullName);
+		card.appendChild(dir);
+		card.appendChild(phone);
+		card.appendChild(mail);
+		card.appendChild(website);
+		card.appendChild(level);
+		card.appendChild(portrait);
+
+		grid.appendChild(card);
+	});
+}
 
 
 
+
+/*---------VISITIS --------*/
 
 const actualDate = new Date();
 const visitsDisplay = document.querySelector('#visitMessage');
@@ -44,7 +81,7 @@ const visitsDisplay = document.querySelector('#visitMessage');
 let numVisits = Number(window.localStorage.getItem('visits_Is')) || 0;
 
 if (numVisits !== actualDate) {
-		visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
+	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
 }
 /* else if (numVisits ) {
 	visitsDisplay.textContent = `Back so soon! Awesome!`;
