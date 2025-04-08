@@ -188,5 +188,8 @@
 		font-family: var(--second-font);
 
 	}
-
+	.grid #title{
+		color: var(--principal-color);
+		grid-column: 1/4 ;
+	}
 }
