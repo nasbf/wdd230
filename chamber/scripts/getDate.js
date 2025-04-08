@@ -36,13 +36,14 @@ getMembers();
 
 function displayMembers(members) {
 	members.forEach(member => {
-		const grid = document.querySelector("#grid");
-		const card = document.createElement("section");
+		const grid = document.querySelector(".grid");
+		
+		const cardDirectory = document.createElement("section");
 		const fullName = document.createElement("h2");
 		const dir = document.createElement("p");
 		const phone = document.createElement("p");
 		const mail = document.createElement("p");
-		const website = document.createElement("p");
+		const website = document.createElement("a");
 		const level = document.createElement("p");
 		const portrait = document.createElement("img");
 
@@ -50,26 +51,44 @@ function displayMembers(members) {
 		dir.textContent = `${member.dir}`;
 		phone.textContent = `${member.phone}`;
 		mail.textContent = `${member.mail}`;
-		website.textContent = `${member.website}`;
+		website.setAttribute ("href",member.website);
+		website.textContent = member.website;
+
 		level.textContent = `${member.level}`;
 		portrait.setAttribute("src", member.img);
         portrait.setAttribute("alt", `Portrait of ${member.company}`);
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "180");
-        portrait.setAttribute("height", "250");
+        portrait.setAttribute("height", "180");
 		
-		card.appendChild(fullName);
-		card.appendChild(dir);
-		card.appendChild(phone);
-		card.appendChild(mail);
-		card.appendChild(website);
-		card.appendChild(level);
-		card.appendChild(portrait);
+		cardDirectory.appendChild(fullName);
+		cardDirectory.appendChild(dir);
+		cardDirectory.appendChild(phone);
+		cardDirectory.appendChild(mail);
+		cardDirectory.appendChild(website);
+		cardDirectory.appendChild(level);
+		cardDirectory.appendChild(portrait);
 
-		grid.appendChild(card);
+		grid.appendChild(cardDirectory);
 	});
 }
 
+/*------button grid and list -----*/
+const gridStyle = document.querySelector("#grid");
+const listStyle = document.querySelector("#list");
+const display = document.querySelector("article");
+
+gridStyle.addEventListener ("click", () => {
+	display.classList.add ("grid");
+	display.classList.remove ("list");
+});
+
+listStyle.addEventListener ("click", showList);
+
+function showList(){
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
 
 
 

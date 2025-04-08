@@ -283,7 +283,8 @@ footer {
     font-family: var(--second-font);
 
 }
-.spotlight h1{
+
+.spotlight h1 {
 
     text-align: center;
     font-family: var(--second-font);
@@ -417,4 +418,97 @@ footer {
     text-align: center;
 
 
+}
+
+/*---directory css ----*/
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.optionsView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    height: 55px;
+    margin-top: 40px;
+
+}
+
+.buttons {
+    cursor: pointer;
+    width: 35%;
+    border: 2px solid #142E47;
+    background-color: #c8c8eb55;
+    border-radius: 8px;
+    color: black;
+    font-weight: 700;
+
+
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+
+
+
+
+}
+
+.grid h2 {
+    margin-bottom: 20px;
+}
+
+.grid p {
+    font-size: 1em;
+    font-family: var(--second-font);
+
+}
+
+.grid img {
+    margin-top: 50px;
+}
+
+.grid a:focus {
+    color: rgb(255, 34, 0);
+
+}
+
+.grid section {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    box-shadow: 3px 3px 3px 3px rgba(94, 91, 108, 0.737);
+
+}
+
+
+.list section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(209, 217, 238);
+    font-size: smaller;
+    border: 7px solid white;
+    padding: 10px;
+    font-family: var(--principal-font-family);
+
+
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
 }
