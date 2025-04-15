@@ -54,6 +54,9 @@
 	.textbtnDiv {
 		width: 20%;
 	}
+	.section-side {
+		height: 60px;
+	}
 
 	.spotlight-item {
 		width: 80%;

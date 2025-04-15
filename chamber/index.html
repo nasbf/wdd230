@@ -27,6 +27,10 @@
 
 <body>
     <header>
+        <div id="banner" class="banner hidden">
+            <p>Chamber of Commerce Meeting wednesday 7:00pm.</p>
+            <button id="bannerButton">X</button>
+        </div>
         <div id="headerBox">
             <img src="images/logo.png" alt="Alexandra Suárez" width="90" height="70">
             <span>Colombia Chamber of Commerce</span>
@@ -52,9 +56,11 @@
                 <p>All Services here for You!</p>
 
                 <div id="buttonDiv" class="buttonDiv">
-                    <button>
-                        FIND YOUR SERVICE
-                    </button>
+                    <a href="directory.html">
+                        <button>
+                            FIND YOUR SERVICE
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -66,15 +72,26 @@
             <div id="sideBar" class="section-side">
                 <div id="wheatherSection" class="sideBar">
                     <h2>WEATHER</h2>
-                    ##
+
+                    <p id="current-temp"></p>
+                    <figure>
+                        <img src="" alt="" id="weather-icon">
+                        <figcaption></figcaption>
+                        <div id=forecastDiv></div>
+                    </figure>
+                    
                 </div>
                 <div id="eventsSection" class="sideBar">
                     <h2>EVENTS</h2>
-                    ##
+                    
+                    <p>May 3, 2025. Concert to the peace.</p>
+                    <p>may 17, 2025. Movie at park.</p>
+                    
 
                 </div>
             </div>
 
+            
 
             <section id="spotlight" class="spotlight">
                 <h1>BOGOTA CHAMBER OF COMMERCE</h1>

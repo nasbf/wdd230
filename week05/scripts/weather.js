@@ -3,10 +3,10 @@ const weatherIcon = document.querySelector("#weather-icon");
 const figcaption = document.querySelector("figcaption");
 
 const mykey = "a77ac1328c855c77ce77ae06799f182d"
-const lat = "49,75"
-const alt = "6,64"
+const lat = "49.74"
+const alt = "6.63"
 
-const myurl = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${alt}&appid=${mykey}`
+const myurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${alt}&appid=${mykey}&units=metric`;
 async function apiFetch() {
     try {
         const response = await fetch(myurl);
