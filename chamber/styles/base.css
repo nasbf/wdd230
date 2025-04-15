@@ -340,7 +340,7 @@ footer {
     text-align: center;
 }
 
-.spotlight-item p {
+.spotlight-item p, h5 {
     font-family: var(--principal-font-family);
     font-size: 1em;
     text-align: center;
