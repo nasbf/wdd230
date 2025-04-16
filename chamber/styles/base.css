@@ -135,7 +135,9 @@ nav a:hover {
     padding: 30px;
     gap: 20px
 }
-
+nav a.active::before{
+    content:"📍";
+}
 
 .imgDiv img {
     width: 100%;

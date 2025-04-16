@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (today >= 1 && today <= 3) {
 			banner.classList.remove("hidden");
 		}
-	
+
 		bannerButton.addEventListener("click", () => {
 			banner.classList.add("hidden");
 		});
 	}
-	
-	
+
+
 	const modified = document.querySelector('#modified');
 	const info = document.querySelector('#info');
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 	function displayResults(data) {
-		
+
 		currentTemp.innerHTML = `${data.main.temp}&deg;C`;
 		const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 		weatherIcon.setAttribute('src', iconsrc);
@@ -186,6 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 
+
 	/*---------VISITIS --------*/
 
 	/* const actualDate = new Date();
@@ -211,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	*/
 
-	
+
 });
 
 
